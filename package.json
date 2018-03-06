@@ -1,0 +1,36 @@
+{
+  "name": "node-backend-template", //nnameProject
+  "version": "1.0.0", //version
+  "description": "Template backend to project node connection mongoDB",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bieeldeveloper/node-backend-template.git"
+  },
+  "author": "Node Backend Template - BieelDeveloper",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bieeldeveloper/node-backend-template/issues"
+  },
+  "homepage": "https://github.com/bieeldeveloper/node-backend-template#readme",
+  "dependencies": {
+    "bcrypt": "^1.0.3", // encrypt password // compare password
+    "body-parser": "^1.18.2", //parser in body (form)
+    "boom": "^7.1.1", //log err
+    "dotenv": "^4.0.0", //environment variable
+    "errorhandler": "^1.5.0", //error
+    "express": "^4.16.2", //router
+    "http": "0.0.0", 
+    "joi": "^13.0.2", //validation
+    "jsonwebtoken": "^8.1.0", //jwt
+    "method-override": "^2.3.10",
+    "mongoose": "^4.10.8", //connection mongodb
+    "morgan": "^1.9.0",
+    "passport": "^0.4.0",
+    "passport-jwt": "^2.2.1",
+    "winston": "^2.4.0"
+  }
+}
