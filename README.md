@@ -13,21 +13,23 @@ Criar template modelo para backend
 2. $ npm install
 3. $ node server.js
 
-### Modules / Version / Description - install
-bcrypt 		/ ^1.0.3 	/ "encrypt password | compare password"
-body-parser / ^1.18.2 	/ "parser in body (form)""
-boom 		/ ^7.1.1	/ "log err"
-dotenv		/ ^4.0.0	/ "environment variable"
-express		/ ^4.16.2	/ "router"
-https 		/ 0.0.0 
-joi 		/^13.0.2	/ "validation"
-jsonwebtoken/^8.1.0		/ "jwt"
-method-override/^2.3.10
-mongoose	/^4.10.8	/ "connection mongodb"
-morgan		/^1.9.0
-passport 	/^0.4.0
-passport-jwt/^2.2.1
-winston		/^2.4.0
+### Modules install
+MODULE | VERSION | DESCRIPTION
+-------|---------|------------
+bcrypt | ^1.0.3 | encrypt password and compare password
+body-parser | ^1.18.2 | parser in body (form)
+boom | ^7.1.1 | log err
+dotenv | ^4.0.0	| environment variable
+express | ^4.16.2 | router
+https | 0.0.0 
+joi | ^13.0.2 | validation
+jsonwebtoken | ^8.1.0 | jwt
+method-override | ^2.3.10
+mongoose | ^4.10.8 | connection mongodb
+morgan | ^1.9.0
+passport | ^0.4.0
+passport-jwt | ^2.2.1
+winston | ^2.4.0
 
 
 
