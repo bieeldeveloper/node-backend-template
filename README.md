@@ -1,5 +1,5 @@
 # node-backend-template
-Criar template modelo para backend
+Create model to backend with connection mongoDB
 
 ### Installing Tools
 1. Install JDK8 [install](http://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-2133151.html)
