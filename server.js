@@ -15,7 +15,6 @@ const methodOverride = require('method-override')
 
 
 // connection db mongoose
-//mongoose.connect(process.env.DB_URL);
 mongoose.Promise = global.Promise;
 mongoose.connect(process.env.DB_URL);
 
@@ -43,8 +42,9 @@ app.use(methodOverride());
 
 
 const router = express.Router();
-require('./routes/api/v1/usuario/usuario_routes')(router);
-require('./routes/api/v1/usuario/perfil_routes')(router);
+require('./routes/api/v1/user/user_routes')(router);
+require('./routes/api/v1/user/profile_routes')(router);
+require('./routes/api/v1/authentication/login_routes')(router);
 
 app.use('/core/api/v1', router);
 // catch 404 and forward to error handler
