@@ -15,8 +15,9 @@ const methodOverride = require('method-override')
 
 
 // connection db mongoose
+//mongoose.connect(process.env.DB_URL);
+mongoose.connect(process.env.DB_URL, { useMongoClient: true });
 mongoose.Promise = global.Promise;
-mongoose.connect(process.env.DB_URL);
 
 const app = express();
 

@@ -15,7 +15,7 @@ class ProfileBusiness {
   */
   async searchProfiles(){ 
     try{
-      let profiles = PorfileModel.find();
+      let profiles = ProfileModel.find();
       return profiles;
     }catch(error){
       Logger.debug(error)

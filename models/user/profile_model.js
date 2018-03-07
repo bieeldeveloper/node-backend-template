@@ -9,7 +9,6 @@ var Schema   = mongoose.Schema;
 */
 
 var profileSchema = new Schema({
-	_id : 	{type: Number, unique: true, required: true},
 	'description' : 	{type: String, trim: true, required: true, unique: true}
 });
 

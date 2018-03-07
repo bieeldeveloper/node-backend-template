@@ -1,6 +1,6 @@
 "use strict";
 
-const UsuarioBusiness = require('../../business/usuario/usuario_business');
+const UserBusiness = require('../../business/user/user_business');
 
 const jwtStrategy = require('passport-jwt').Strategy;
 const jwtExtractor = require('passport-jwt').ExtractJwt;
@@ -13,7 +13,7 @@ opts.algorithms = ['HS384'];
 
 module.exports = new jwtStrategy(opts, function(jwtPayload, next) {
     try {
-        UsuarioBusiness.findgetUsuarioById(jwtPayload.id).then((user) => {
+        UserBusiness.searchUserById(jwtPayload.id).then((user) => {
             if (user) {
                 return next(null, user);
             } else {
